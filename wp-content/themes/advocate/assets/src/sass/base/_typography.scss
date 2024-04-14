@@ -1,0 +1,63 @@
+@import "./_mixins.scss";
+@import "./_variables.scss";
+@import "./_colors.scss";
+
+@include font-face("Gilroy", "../fonts/Gilroy/Gilroy-Regular", 400, normal);
+
+h1 {
+	font-size-responsive: 36px 42px 480px 1300px;
+	margin: 0px;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 50px;
+}
+
+h2 {
+	font-size-responsive: 30px 42px 480px 1300px;
+	margin: 0px;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 39px;
+}
+
+h3 {
+	font-size-responsive: 24px 26px 480px 1300px;
+	margin: 0px;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 39px;
+}
+
+h4 {
+	font-size-responsive: 24px 18px 480px 1300px;
+	margin: 0px;
+	margin: 0px;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 39px;
+}
+
+h5 {
+	font-size-responsive: 18px 16px 480px 1300px;
+	margin: 0px;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 39px;
+}
+
+h6 {
+	font-size-responsive: 18px 14px 480px 1300px;
+	margin: 0px;
+	margin: 0px;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 39px;
+}
+
+p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 0px;
+	margin: 0px;
+}

@@ -1,0 +1,127 @@
+@import "./_mixins.scss";
+@import "./_variables.scss";
+@import "./_colors.scss";
+
+html {
+	@include media-breakpoint-up(md) {
+		font-size: vw(16);
+	}
+}
+
+html,
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	min-width: 320px;
+	overflow-x: hidden;
+	background-color: transparent;
+}
+
+* {
+	font-family: 'Gilroy', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.admin-bar {
+	.header {
+		margin-top: 32px;
+		
+		@include media-breakpoint-down(xxl) {
+			margin-top: 46px;
+		}
+	}
+}
+
+.menu-open {
+	overflow: hidden;
+}
+
+main {
+	flex: 1;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1500px;
+	width: 100%;
+	margin: 0 auto;
+	
+	@include media-breakpoint-down(xxl) {
+		max-width: 1100px;
+	}
+	
+	@include media-breakpoint-down(xl) {
+		max-width: 900px;
+	}
+	
+	@include media-breakpoint-down(lg) {
+		max-width: 750px;
+	}
+	
+	@include media-breakpoint-down(md) {
+		padding: 0 20px;
+	}
+}
+
+.container-xxl {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 1440px;
+	padding: 0px 70px;
+}
+
+.container-xl {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 1170px;
+	padding: 0px 15px;
+}
+
+.container-md {
+	margin: 0px auto;
+	width: 100%;
+	max-width: 867px;
+	padding: 0px 15px;
+}
+
+.container-sm {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1050px;
+	padding: 0;
+}
+
+.container-xs {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 850px;
+	padding: 0;
+}
+
+.bg-loadingoverlay {
+	background-color: $white;
+	z-index: 500;
+}

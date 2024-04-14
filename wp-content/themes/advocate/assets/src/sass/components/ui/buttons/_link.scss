@@ -1,0 +1,31 @@
+.btn-link {
+	font-family: 'Almoni', serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 150%;
+	color: $white;
+	position: relative;
+	width: fit-content;
+	
+	@include media-breakpoint-down(md) {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 16px;
+		letter-spacing: -0.02em;
+	}
+	
+	&:after {
+		content: '';
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		top: 50%;
+		transform: translateY(-50%);
+		inset-inline-end: -21px;
+		background-image: url('data:image/svg+xml,<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.39635 11.0405C8.63687 11.2747 8.6307 11.6357 8.37819 11.8628C8.10706 12.1059 7.66764 12.0965 7.41021 11.8459L2.74563 7.30027C2.62404 7.18127 2.56588 7.02821 2.57282 6.87795L2.57453 6.84104C2.58733 6.71538 2.64474 6.59266 2.74489 6.49398L2.74537 6.49351L7.40904 1.94873C7.53057 1.83079 7.70252 1.7577 7.88872 1.754C8.07612 1.75101 8.25165 1.81744 8.37764 1.93098L8.37812 1.93142C8.50306 2.04353 8.56885 2.1919 8.57213 2.33978C8.57245 2.35448 8.57215 2.3692 8.57123 2.38391C8.56291 2.51668 8.50402 2.64841 8.39585 2.75347L4.14741 6.89716L8.39635 11.0405Z" fill="white" stroke="white" stroke-width="0.5"/></svg>');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
