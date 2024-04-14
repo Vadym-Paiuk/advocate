@@ -1,0 +1,11 @@
+@import "../../../base/_mixins.scss";
+@import "../../../base/_variables.scss";
+@import "../../../base/colors.scss";
+
+input[type="checkbox"] {
+	width: fit-content;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	accent-color: $black;
+}
